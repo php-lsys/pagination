@@ -1,0 +1,1482 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: db\n"
+"POT-Creation-Date: 2017-01-07 01:50+0800\n"
+"PO-Revision-Date: 2017-01-07 01:54+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: tpls/simple_html.php:63
+msgid "Total:"
+msgstr "总计:"
+
+#: tpls/simple_html.php:65 tpls/simple_html.php:69
+msgid "page"
+msgstr "页"
+
+#: tpls/simple_html.php:67
+msgid "Now:"
+msgstr "当前:"
+
+#: tpls/simple_html.php:73 tpls/simple_html.php:75
+msgid "First"
+msgstr "首页"
+
+#: tpls/simple_html.php:79 tpls/simple_html.php:81
+msgid "Previous"
+msgstr "上页"
+
+#: tpls/simple_html.php:95 tpls/simple_html.php:97
+msgid "Next"
+msgstr "下页"
+
+#: tpls/simple_html.php:101 tpls/simple_html.php:103
+msgid "Last"
+msgstr "末页"
+
+#~ msgid "edit"
+#~ msgstr "编辑"
+
+#~ msgid "Please select top navegate"
+#~ msgstr "请选择一级菜单或者设定为顶级菜单"
+
+#~ msgid "cat modify"
+#~ msgstr "类别编辑"
+
+#~ msgid "submit"
+#~ msgstr "提交"
+
+#~ msgid "id_cat"
+#~ msgstr "类别"
+
+#~ msgid "parent cat"
+#~ msgstr "顶级类别"
+
+#~ msgid "cat name"
+#~ msgstr "类别名称"
+
+#~ msgid "sort"
+#~ msgstr "排序"
+
+#~ msgid "active manager"
+#~ msgstr "活动管理"
+
+#~ msgid "title"
+#~ msgstr "标题"
+
+#~ msgid "add active"
+#~ msgstr "新增活动"
+
+#~ msgid "active cat"
+#~ msgstr "活动类别"
+
+#~ msgid "add cat"
+#~ msgstr "新增类别"
+
+#~ msgid "start time-end time"
+#~ msgstr "开始/结束时间"
+
+#~ msgid "address of gather"
+#~ msgstr "集合地点"
+
+#~ msgid "address of destination"
+#~ msgstr "目的地"
+
+#~ msgid "money"
+#~ msgstr "金额"
+
+#~ msgid "operation"
+#~ msgstr "操作"
+
+#~ msgid "edit and view"
+#~ msgstr "编辑/查看"
+
+#~ msgid "delete"
+#~ msgstr "删除"
+
+#~ msgid "pause"
+#~ msgstr "暂停"
+
+#~ msgid "restart"
+#~ msgstr "重启"
+
+#~ msgid "add activity"
+#~ msgstr "新增活动"
+
+#~ msgid "activity cat"
+#~ msgstr "活动类别"
+
+#~ msgid "deadline"
+#~ msgstr "报名截至时间"
+
+#~ msgid "status"
+#~ msgstr "状态"
+
+#~ msgid "apply count"
+#~ msgstr "申请总数"
+
+#~ msgid "joined count"
+#~ msgstr "参与总数"
+
+#~ msgid "please select the cat"
+#~ msgstr "请选择类别"
+
+#~ msgid "activity manage"
+#~ msgstr "活动管理"
+
+#~ msgid "request photo"
+#~ msgstr "活动必须添加活动海报!"
+
+#~ msgid "request content"
+#~ msgstr "活动详细内容不能为空!"
+
+#~ msgid "shop not null"
+#~ msgstr "商户模型未进行初始化"
+
+#~ msgid "successed"
+#~ msgstr "成功执行"
+
+#~ msgid "Please select top cat Or is top default"
+#~ msgstr "请选择上级商品类别或者设定为顶级类别"
+
+#~ msgid "add ads"
+#~ msgstr "添加广告"
+
+#~ msgid "url"
+#~ msgstr "链接"
+
+#~ msgid "add time"
+#~ msgstr "新增时间"
+
+#~ msgid "failed"
+#~ msgstr "失败执行"
+
+#~ msgid "please input the title."
+#~ msgstr "请输入标题"
+
+#~ msgid "ads position"
+#~ msgstr "广告位"
+
+#~ msgid "image"
+#~ msgstr "图片"
+
+#~ msgid "ads manager"
+#~ msgstr "广告管理"
+
+#~ msgid "ads list"
+#~ msgstr "广告列表"
+
+#~ msgid "argement error"
+#~ msgstr "参数错误"
+
+#~ msgid "success"
+#~ msgstr "成功执行"
+
+#~ msgid "article cat modify"
+#~ msgstr "编辑类别"
+
+#~ msgid "article manager"
+#~ msgstr "资讯管理"
+
+#~ msgid "add article"
+#~ msgstr "新增资讯"
+
+#~ msgid "article cat"
+#~ msgstr "资讯类别"
+
+#~ msgid "category"
+#~ msgstr "类别"
+
+#~ msgid "article not null"
+#~ msgstr "资讯模型初始化失败,不能为空."
+
+#~ msgid "link url"
+#~ msgstr "外部链接"
+
+#~ msgid "http://"
+#~ msgstr "http://"
+
+#~ msgid "page title"
+#~ msgstr "页面标题"
+
+#~ msgid "page title of seo"
+#~ msgstr "页面SEO标题"
+
+#~ msgid "page keyword"
+#~ msgstr "页面关键词"
+
+#~ msgid "page keyword of seo"
+#~ msgstr "页面SEO关键词"
+
+#~ msgid "article brief"
+#~ msgstr "资讯内容"
+
+#~ msgid "article photos"
+#~ msgstr "资讯相册"
+
+#~ msgid "add article cat"
+#~ msgstr "新增资讯类别"
+
+#~ msgid "article"
+#~ msgstr "资讯"
+
+#~ msgid "Please select top article cat"
+#~ msgstr "请选择顶级资讯类别或者设定为顶级"
+
+#~ msgid "view"
+#~ msgstr "查看详情"
+
+#~ msgid "view order"
+#~ msgstr "查看订单"
+
+#~ msgid "view finance"
+#~ msgstr "查看财务"
+
+#~ msgid "finance"
+#~ msgstr "财务信息"
+
+#~ msgid "order sn"
+#~ msgstr "订单编号"
+
+#~ msgid "pay account"
+#~ msgstr "支付账户"
+
+#~ msgid "finance type"
+#~ msgstr "财务类型"
+
+#~ msgid "fee"
+#~ msgstr "手续费"
+
+#~ msgid "balance"
+#~ msgstr "余额"
+
+#~ msgid "time"
+#~ msgstr "时间"
+
+#~ msgid "login success"
+#~ msgstr "登陆成功"
+
+#~ msgid "user not exists"
+#~ msgstr "用户不存在"
+
+#~ msgid "account and password is not empty"
+#~ msgstr "账号或者密码不能为空"
+
+#~ msgid "quick navigation management"
+#~ msgstr "快速导航列表"
+
+#~ msgid "add Quick navegate"
+#~ msgstr "新增快速导航"
+
+#~ msgid "navigation list"
+#~ msgstr "菜单列表"
+
+#~ msgid "navigation management"
+#~ msgstr "菜单管理"
+
+#~ msgid "add Move navegate"
+#~ msgstr "新增菜单"
+
+#~ msgid "quick navigation"
+#~ msgstr "快速导航列表"
+
+#~ msgid "name"
+#~ msgstr "名称"
+
+#~ msgid "nav status"
+#~ msgstr "状态"
+
+#~ msgid "Select menu to perform"
+#~ msgstr "请选择平台"
+
+#~ msgid "navegate not null"
+#~ msgstr "菜单为空."
+
+#~ msgid "add navigation"
+#~ msgstr "新增菜单"
+
+#~ msgid "The parent navigation"
+#~ msgstr "上级菜单"
+
+#~ msgid "The name of the navigation"
+#~ msgstr "菜单名称"
+
+#~ msgid "Please enter the name of navigation"
+#~ msgstr "请输入菜单名称"
+
+#~ msgid "icon"
+#~ msgstr "标识"
+
+#~ msgid "Outside the chain of the url"
+#~ msgstr "外部链接"
+
+#~ msgid "Must take in front of the http://"
+#~ msgstr "链接必须以http://开头"
+
+#~ msgid "Menu State"
+#~ msgstr "菜单状态"
+
+#~ msgid "top navagete"
+#~ msgstr "上级菜单"
+
+#~ msgid "all order"
+#~ msgstr "全部订单"
+
+#~ msgid "base order"
+#~ msgstr "普通订单"
+
+#~ msgid "groupon order"
+#~ msgstr "团购订单"
+
+#~ msgid "ref order"
+#~ msgstr "退款订单"
+
+#~ msgid "pre order"
+#~ msgstr "预购订单"
+
+#~ msgid "seckill order"
+#~ msgstr "秒杀订单"
+
+#~ msgid "fight order"
+#~ msgstr "拼团订单"
+
+#~ msgid "order manager"
+#~ msgstr "订单管理"
+
+#~ msgid "order number"
+#~ msgstr "订单编号"
+
+#~ msgid "order type"
+#~ msgstr "订单类型"
+
+#~ msgid "shipping"
+#~ msgstr "物流"
+
+#~ msgid "total amount"
+#~ msgstr "总计费用"
+
+#~ msgid "pay type"
+#~ msgstr "支付类型"
+
+#~ msgid "order status"
+#~ msgstr "订单状态"
+
+#~ msgid "order time"
+#~ msgstr "下单时间"
+
+#~ msgid "no have shipping"
+#~ msgstr "不需要物流"
+
+#~ msgid "need shipping"
+#~ msgstr "需要物流"
+
+#~ msgid "shopcarts detail"
+#~ msgstr "购物车详情"
+
+#~ msgid "shopcarts list"
+#~ msgstr "购物车列表"
+
+#~ msgid "shopcarts manager"
+#~ msgstr "购物车管理"
+
+#~ msgid "nickname"
+#~ msgstr "昵称"
+
+#~ msgid "product num"
+#~ msgstr "商品数量"
+
+#~ msgid "product money"
+#~ msgstr "商品价格"
+
+#~ msgid "pay money"
+#~ msgstr "支付金额"
+
+#~ msgid "update time"
+#~ msgstr "更新时间"
+
+#~ msgid "Return of the goods"
+#~ msgstr "退货商品"
+
+#~ msgid "product name"
+#~ msgstr "商品名称"
+
+#~ msgid "refund num"
+#~ msgstr "退货数量"
+
+#~ msgid "refund money"
+#~ msgstr "退款"
+
+#~ msgid "refund time"
+#~ msgstr "返退日期"
+
+#~ msgid "refund status"
+#~ msgstr "返退状态"
+
+#~ msgid "shipping no."
+#~ msgstr "快递单号"
+
+#~ msgid "shipping all"
+#~ msgstr "全部发货完成(如果全部发货完成,请勾选此项)"
+
+#~ msgid "order print"
+#~ msgstr "订单打印"
+
+#~ msgid "send product"
+#~ msgstr "发货"
+
+#~ msgid "refund note"
+#~ msgstr "退货备注"
+
+#~ msgid "null order,can't create shipping"
+#~ msgstr "订单为空不能创建物流信息"
+
+#~ msgid "Please select a Courier company"
+#~ msgstr "请选择物流公司"
+
+#~ msgid "Please select the delivery goods"
+#~ msgstr "请选择物流商品"
+
+#~ msgid "Refund success"
+#~ msgstr "退款操作成功"
+
+#~ msgid "logistics manager"
+#~ msgstr "物流管理"
+
+#~ msgid "Add the Courier"
+#~ msgstr "新增物流"
+
+#~ msgid "logistics name"
+#~ msgstr "物流名称"
+
+#~ msgid "logistics status"
+#~ msgstr "物流状态"
+
+#~ msgid "argements is error"
+#~ msgstr "参数数据错误!"
+
+#~ msgid "shipping name or shipping price can't empty!"
+#~ msgstr "物流名称或者运费不能为空!"
+
+#~ msgid "shipping manager"
+#~ msgstr "物流管理"
+
+#~ msgid "area name"
+#~ msgstr "区域名称"
+
+#~ msgid "area"
+#~ msgstr "区域"
+
+#~ msgid "shipping price"
+#~ msgstr "运费"
+
+#~ msgid "shipping name"
+#~ msgstr "物流名称"
+
+#~ msgid "new shipping area"
+#~ msgstr "新增物流区域"
+
+#~ msgid "shipping area name"
+#~ msgstr "物流区域名称"
+
+#~ msgid "shipping area price"
+#~ msgstr "物流区域价格"
+
+#~ msgid "Courier can not find"
+#~ msgstr "查找物流失败"
+
+#~ msgid "Delete failed, please try again later"
+#~ msgstr "删除失败,请稍后再试试."
+
+#~ msgid "Operation is successful"
+#~ msgstr "操作成功!"
+
+#~ msgid "delete and reback"
+#~ msgstr "删除/恢复"
+
+#~ msgid "copy this"
+#~ msgstr "复制"
+
+#~ msgid "product manager"
+#~ msgstr "商品管理"
+
+#~ msgid "add product"
+#~ msgstr "新增商品"
+
+#~ msgid "product brand"
+#~ msgstr "商品品牌"
+
+#~ msgid "product cat"
+#~ msgstr "商品类别"
+
+#~ msgid "product attr tpl manager"
+#~ msgstr "属性管理"
+
+#~ msgid "product rule manager"
+#~ msgstr "商品规则管理"
+
+#~ msgid "price"
+#~ msgstr "商品价格"
+
+#~ msgid "store"
+#~ msgstr "商品库存"
+
+#~ msgid "groupon name and start end time are't empty"
+#~ msgstr "团购名称和开始结束时间不能为空."
+
+#~ msgid "product groupon"
+#~ msgstr "团购管理"
+
+#~ msgid "groupon edit"
+#~ msgstr "团购编辑"
+
+#~ msgid "save"
+#~ msgstr "保存"
+
+#~ msgid "groupon name"
+#~ msgstr "团购名称"
+
+#~ msgid "start and end time"
+#~ msgstr "开始-结束时间"
+
+#~ msgid "buy limit"
+#~ msgstr "购买限制"
+
+#~ msgid "storage"
+#~ msgstr "库存"
+
+#~ msgid "operation failed"
+#~ msgstr "操作失败!"
+
+#~ msgid "You do not have permission to do this"
+#~ msgstr "您没有权限使用当前操作."
+
+#~ msgid "operation success"
+#~ msgstr "操作成功!"
+
+#~ msgid "product seckill"
+#~ msgstr "秒杀管理"
+
+#~ msgid "product title"
+#~ msgstr "商品标题"
+
+#~ msgid "order/pay/user"
+#~ msgstr "已下单/已支付/用户数"
+
+#~ msgid "min groupon"
+#~ msgstr "最小成团"
+
+#~ msgid "argement is error!"
+#~ msgstr "参数错误"
+
+#~ msgid "fight name and start end time are't empty"
+#~ msgstr "拼团名称和开始结束时间不能为空!"
+
+#~ msgid "product fight"
+#~ msgstr "拼团"
+
+#~ msgid "fight edit"
+#~ msgstr "拼团编辑"
+
+#~ msgid "fight name"
+#~ msgstr "拼团名称"
+
+#~ msgid "order/pay/fail"
+#~ msgstr "已下单/已支付/下单失败"
+
+#~ msgid "min fight"
+#~ msgstr "最小拼团量"
+
+#~ msgid "ID and Pre name is empty!"
+#~ msgstr "ID和预购名称不能为空!"
+
+#~ msgid "product pre"
+#~ msgstr "商品预购"
+
+#~ msgid "pre edit"
+#~ msgstr "预购编辑"
+
+#~ msgid "pre is refund"
+#~ msgstr "预购退款"
+
+#~ msgid "pre start time"
+#~ msgstr "预购开始时间"
+
+#~ msgid "pre price"
+#~ msgstr "预购价格"
+
+#~ msgid "pre after start end time"
+#~ msgstr "预购尾款支付开始-结束时间"
+
+#~ msgid "after price"
+#~ msgstr "尾款"
+
+#~ msgid "pre shipping time"
+#~ msgstr "预购发货时间"
+
+#~ msgid "after pay time"
+#~ msgstr "尾款支付时间"
+
+#~ msgid "after pay status"
+#~ msgstr "尾款支付状态"
+
+#~ msgid "seckill name and start end time are't empty"
+#~ msgstr "秒杀名称和开始结束时间不能为空!"
+
+#~ msgid "seckill edit"
+#~ msgstr "秒杀编辑"
+
+#~ msgid "seckill price"
+#~ msgstr "秒杀价格"
+
+#~ msgid "product rule"
+#~ msgstr "商品规则"
+
+#~ msgid "fa_price"
+#~ msgstr "成本价"
+
+#~ msgid "ma_price"
+#~ msgstr "市场价"
+
+#~ msgid "sh_price"
+#~ msgstr "本店价"
+
+#~ msgid "Courier company"
+#~ msgstr "物流公司"
+
+#~ msgid "Courier area"
+#~ msgstr "物流区域"
+
+#~ msgid "add"
+#~ msgstr "新增"
+
+#~ msgid "product type"
+#~ msgstr "商品类型"
+
+#~ msgid "product photos"
+#~ msgstr "商品相册"
+
+#~ msgid "bar code"
+#~ msgstr "条码编号"
+
+#~ msgid "please input the bar_code."
+#~ msgstr "请输入商品条码编号"
+
+#~ msgid "product brief"
+#~ msgstr "商品详情"
+
+#~ msgid "special shipping"
+#~ msgstr "特殊物流"
+
+#~ msgid "product group"
+#~ msgstr "商品分组"
+
+#~ msgid "attr tpl type"
+#~ msgstr "类别模板类型"
+
+#~ msgid "attr tpl name"
+#~ msgstr "类别模板名称"
+
+#~ msgid "attr tpl values"
+#~ msgstr "类别模板值"
+
+#~ msgid "product description"
+#~ msgstr "商品描述"
+
+#~ msgid "product package"
+#~ msgstr "商品包装"
+
+#~ msgid "Create new product group"
+#~ msgstr "重新创建新的商品分组"
+
+#~ msgid "As a new group"
+#~ msgstr "创建新的商品分组"
+
+#~ msgid "add product cat"
+#~ msgstr "新增商品类别"
+
+#~ msgid "product cat modify"
+#~ msgstr "商品类别编辑"
+
+#~ msgid "show image"
+#~ msgstr "展示图片"
+
+#~ msgid "add product brand"
+#~ msgstr "新增商品品牌"
+
+#~ msgid "brand name"
+#~ msgstr "品牌名称"
+
+#~ msgid "Please select top brand Or is top default"
+#~ msgstr "请选择品牌,不选则默认为顶级"
+
+#~ msgid "product brand modify"
+#~ msgstr "编辑商品品牌"
+
+#~ msgid "id_brand"
+#~ msgstr "品牌ID"
+
+#~ msgid "parent brand"
+#~ msgstr "上级品牌"
+
+#~ msgid "brand logo"
+#~ msgstr "品牌标识"
+
+#~ msgid "brand des"
+#~ msgstr "品牌描述"
+
+#~ msgid "add product rule"
+#~ msgstr "新增规则"
+
+#~ msgid "Rule does not exist"
+#~ msgstr "规则不存在"
+
+#~ msgid "You do not have permission to delete the current rule"
+#~ msgstr "您没有权限删除当前规则"
+
+#~ msgid "add rule"
+#~ msgstr "新增规则"
+
+#~ msgid "rule name"
+#~ msgstr "规则名称"
+
+#~ msgid "type"
+#~ msgstr "类型"
+
+#~ msgid "end time"
+#~ msgstr "结束时间"
+
+#~ msgid "rule use"
+#~ msgstr "引用数量"
+
+#~ msgid "add attr tpl"
+#~ msgstr "新增属性"
+
+#~ msgid "tpl name"
+#~ msgstr "属性名"
+
+#~ msgid "attr value"
+#~ msgstr "属性值"
+
+#~ msgid "attr type"
+#~ msgstr "属性类型"
+
+#~ msgid "product attr tpl modify"
+#~ msgstr "属性编辑"
+
+#~ msgid "edit proxy"
+#~ msgstr "渠道信息编辑"
+
+#~ msgid "proxy level"
+#~ msgstr "渠道等级"
+
+#~ msgid "proxy ratio"
+#~ msgstr "佣金比率"
+
+#~ msgid "shop name"
+#~ msgstr "商户名称"
+
+#~ msgid "order count"
+#~ msgstr "订单总量"
+
+#~ msgid "pay count"
+#~ msgstr "支付总量"
+
+#~ msgid "sale count"
+#~ msgstr "销售总量"
+
+#~ msgid "proxy time"
+#~ msgstr "渠道代理时间"
+
+#~ msgid "proxy check"
+#~ msgstr "渠道申请审核"
+
+#~ msgid "proxy shop"
+#~ msgstr "本店渠道商"
+
+#~ msgid "proxy me"
+#~ msgstr "自有渠道商品"
+
+#~ msgid "proxy price"
+#~ msgstr "渠道价格"
+
+#~ msgid "product price"
+#~ msgstr "商品原价"
+
+#~ msgid "proxy product"
+#~ msgstr "代理平台商品"
+
+#~ msgid "proxy setting"
+#~ msgstr "渠道等级配置"
+
+#~ msgid "shop proxy current proxy level not existed"
+#~ msgstr "当前商品商户不存在改等级渠道配置信息"
+
+#~ msgid "Your Apply is submit,Please Waitting.."
+#~ msgstr "您的申请已经提交,请耐心等候"
+
+#~ msgid "level"
+#~ msgstr "等级"
+
+#~ msgid "proxy commission"
+#~ msgstr "渠道佣金"
+
+#~ msgid "shop price"
+#~ msgstr "本店价"
+
+#~ msgid "sale money"
+#~ msgstr "销售总额"
+
+#~ msgid "request level"
+#~ msgstr "申请级别"
+
+#~ msgid "request time"
+#~ msgstr "申请提交时间"
+
+#~ msgid "proxy name"
+#~ msgstr "渠道名称"
+
+#~ msgid "level money"
+#~ msgstr "升级金额"
+
+#~ msgid "level auto"
+#~ msgstr "是否自动升级"
+
+#~ msgid "no auto level"
+#~ msgstr "不自动升级"
+
+#~ msgid "auto level"
+#~ msgstr "自动升级"
+
+#~ msgid "distribution product"
+#~ msgstr "分销商品"
+
+#~ msgid "distribution receivables"
+#~ msgstr "佣金记录"
+
+#~ msgid "market price"
+#~ msgstr "市场价"
+
+#~ msgid "operation is success"
+#~ msgstr "操作成功"
+
+#~ msgid "operation is failed"
+#~ msgstr "操作失败"
+
+#~ msgid "operation is success!"
+#~ msgstr "操作成功!"
+
+#~ msgid "operation is failed!"
+#~ msgstr "操作失败！"
+
+#~ msgid "Account has been registered"
+#~ msgstr "该账号已被注册"
+
+#~ msgid "The two input password is different"
+#~ msgstr "两次密码输入不一致"
+
+#~ msgid "add shop user failed!"
+#~ msgstr "关联商户用户失败."
+
+#~ msgid "add user rose failed!"
+#~ msgstr "新增用户角色失败"
+
+#~ msgid "Account is empty!"
+#~ msgstr "账号为空!"
+
+#~ msgid "user manager"
+#~ msgstr "用户管理"
+
+#~ msgid "headimg"
+#~ msgstr "头像"
+
+#~ msgid "commission"
+#~ msgstr "返佣"
+
+#~ msgid "integration"
+#~ msgstr "积分"
+
+#~ msgid "telphone"
+#~ msgstr "电话"
+
+#~ msgid "relation time"
+#~ msgstr "关联时间"
+
+#~ msgid "wechat manager"
+#~ msgstr "微信管理"
+
+#~ msgid "add wechat navegate"
+#~ msgstr "新增菜单"
+
+#~ msgid "update menu to WeChat"
+#~ msgstr "同步菜单"
+
+#~ msgid "Please select material"
+#~ msgstr "请选择物流"
+
+#~ msgid "Save success"
+#~ msgstr "保存成功"
+
+#~ msgid "attention to reply"
+#~ msgstr "关注回复"
+
+#~ msgid "Add material"
+#~ msgstr "新增素材"
+
+#~ msgid "reply type"
+#~ msgstr "回复类型"
+
+#~ msgid "resource type"
+#~ msgstr "资源类型"
+
+#~ msgid "Parameter is not correct"
+#~ msgstr "参数错误"
+
+#~ msgid "Delete the success"
+#~ msgstr "删除执行成功"
+
+#~ msgid "Delete the failed"
+#~ msgstr "删除执行失败"
+
+#~ msgid "Keywords and material can't be empty"
+#~ msgstr "关键词和内容不能为空"
+
+#~ msgid "Keywords operation"
+#~ msgstr "关键词操作"
+
+#~ msgid "Please input the keyword"
+#~ msgstr "请输入关键词"
+
+#~ msgid "Keywords management response"
+#~ msgstr "关键词管理"
+
+#~ msgid "New keywords"
+#~ msgstr "新关键词"
+
+#~ msgid "keyword"
+#~ msgstr "关键词"
+
+#~ msgid "Material type"
+#~ msgstr "素材类型"
+
+#~ msgid "material"
+#~ msgstr "素材"
+
+#~ msgid "back list"
+#~ msgstr "返回列表"
+
+#~ msgid "operation success!"
+#~ msgstr "操作成功！"
+
+#~ msgid "Material title"
+#~ msgstr "素材标题"
+
+#~ msgid "show picture"
+#~ msgstr "展示图片"
+
+#~ msgid "seo keyword"
+#~ msgstr "SEO关键词"
+
+#~ msgid "please input the seo keyword."
+#~ msgstr "请输入SEO关键词内容"
+
+#~ msgid "external links"
+#~ msgstr "外部链接"
+
+#~ msgid "Please enter the external links"
+#~ msgstr "您可输入外部链接，链接格式：http://....."
+
+#~ msgid "content"
+#~ msgstr "内容"
+
+#~ msgid "wechat source manager"
+#~ msgstr "微信素材管理"
+
+#~ msgid "post time"
+#~ msgstr "提交时间"
+
+#~ msgid "wechat message"
+#~ msgstr "推送素材消息"
+
+#~ msgid "rtype"
+#~ msgstr "素材类型"
+
+#~ msgid "wechat tag"
+#~ msgstr "微信标签"
+
+#~ msgid "tag name"
+#~ msgstr "标签名称"
+
+#~ msgid "tag count"
+#~ msgstr "用户数量"
+
+#~ msgid "wechat user"
+#~ msgstr "微信用户"
+
+#~ msgid "sex"
+#~ msgstr "性别"
+
+#~ msgid "country"
+#~ msgstr "国别"
+
+#~ msgid "province"
+#~ msgstr "省"
+
+#~ msgid "city"
+#~ msgstr "城市"
+
+#~ msgid "subscribe_time"
+#~ msgstr "首次关注时间"
+
+#~ msgid "remark"
+#~ msgstr "备注"
+
+#~ msgid "argement error!"
+#~ msgstr "参数格式错误"
+
+#~ msgid "send job submission success"
+#~ msgstr "推送消息发送成功。"
+
+#~ msgid "resource are't sysc to weixin!"
+#~ msgstr "微信素材还未同步，请先同步至微信"
+
+#~ msgid "wechat user are't empty!"
+#~ msgstr "推送微信用户没有选择"
+
+#~ msgid "agrement is error"
+#~ msgstr "协议错误"
+
+#~ msgid "Your are not premiss"
+#~ msgstr "您没有权限做当前操作."
+
+#~ msgid "record"
+#~ msgstr "记录"
+
+#~ msgid "wechat service modify"
+#~ msgstr "微信客服编辑"
+
+#~ msgid "kf_account"
+#~ msgstr "客服账户"
+
+#~ msgid "kf_wx"
+#~ msgstr "客服微信"
+
+#~ msgid "kf_headimgurl"
+#~ msgstr "客服头像"
+
+#~ msgid "kf_nick"
+#~ msgstr "客服昵称"
+
+#~ msgid "kf_id"
+#~ msgstr "客服ID"
+
+#~ msgid "Wechat Service manager"
+#~ msgstr "微信客服管理"
+
+#~ msgid "add wechat service"
+#~ msgstr "新增微信客服"
+
+#~ msgid "weixin seting is error"
+#~ msgstr "公众号配置错误"
+
+#~ msgid "resource is already synchronization"
+#~ msgstr "资源以及完成同步"
+
+#~ msgid "showimg file is not exist"
+#~ msgstr "展示图片不能为空!"
+
+#~ msgid "update sucess!"
+#~ msgstr "操作成功"
+
+#~ msgid "Delete the local data failed"
+#~ msgstr "删除本地数据失败"
+
+#~ msgid "The material does not exist"
+#~ msgstr "素材不能为空."
+
+#~ msgid "Delete failed, the customer does not exist"
+#~ msgstr "删除失败，客户部存在."
+
+#~ msgid "shop link"
+#~ msgstr "商户链接"
+
+#~ msgid "module link"
+#~ msgstr "模块链接"
+
+#~ msgid "please select module"
+#~ msgstr "请选择内容模块"
+
+#~ msgid "product"
+#~ msgstr "商品"
+
+#~ msgid "please select category."
+#~ msgstr "请选择模块分类"
+
+#~ msgid "please select module content"
+#~ msgstr "请选择当前模块分类下的具体内容"
+
+#~ msgid "Reject the reason cannot be empty"
+#~ msgstr "驳回信息不能为空!"
+
+#~ msgid "add teacher"
+#~ msgstr "添加教师"
+
+#~ msgid "account"
+#~ msgstr "账户"
+
+#~ msgid "account_label"
+#~ msgstr "请输入账号"
+
+#~ msgid "password"
+#~ msgstr "密码"
+
+#~ msgid "password_label"
+#~ msgstr "请输入密码"
+
+#~ msgid "password confirm"
+#~ msgstr "确认密码"
+
+#~ msgid "password_confirm_label"
+#~ msgstr "请再次输入密码"
+
+#~ msgid "nickname_label"
+#~ msgstr "请输入昵称"
+
+#~ msgid "realname"
+#~ msgstr "真实姓名"
+
+#~ msgid "realname_label"
+#~ msgstr "请输入您的真实姓名"
+
+#~ msgid "reset"
+#~ msgstr "重置"
+
+#~ msgid "yes"
+#~ msgstr "正确"
+
+#~ msgid "sign manager"
+#~ msgstr "单页管理"
+
+#~ msgid "question"
+#~ msgstr "问题"
+
+#~ msgid "repeat nums"
+#~ msgstr "回复数量"
+
+#~ msgid "last repeat time"
+#~ msgstr "最近回复时间"
+
+#~ msgid "subject"
+#~ msgstr "课程"
+
+#~ msgid "subject part"
+#~ msgstr "课程批次"
+
+#~ msgid "is delete sure?"
+#~ msgstr "确定删除吗?"
+
+#~ msgid "is sure repeat?"
+#~ msgstr "确定恢复吗?"
+
+#~ msgid "cancel"
+#~ msgstr "取消"
+
+#~ msgid "ok"
+#~ msgstr "正常"
+
+#~ msgid "wechat link"
+#~ msgstr "微信链接"
+
+#~ msgid "wechat source"
+#~ msgstr "微信素材"
+
+#~ msgid "please select wechat source"
+#~ msgstr "请选择微信素材"
+
+#~ msgid "delete sure?"
+#~ msgstr "确定要删除吗？删除后不可恢复!"
+
+#~ msgid "article show"
+#~ msgstr "资讯展示"
+
+#~ msgid "account and password is empty!"
+#~ msgstr "账户或者密码不能为空!"
+
+#~ msgid "Login success"
+#~ msgstr "登陆成功"
+
+#~ msgid "Enter a different password for the two time"
+#~ msgstr "两次输入的密码不相同"
+
+#~ msgid "check code is failed"
+#~ msgstr "验证码错误"
+
+#~ msgid "register is successful"
+#~ msgstr "注册成功"
+
+#~ msgid "Registration failed. Please try again later"
+#~ msgstr "注册失败,请稍后再试"
+
+#~ msgid "account already exists"
+#~ msgstr "账户存在,不能重复注册"
+
+#~ msgid "account or password is empty!"
+#~ msgstr "账户或者密码为空!"
+
+#~ msgid "send timeout"
+#~ msgstr "发送时间"
+
+#~ msgid "Phone number format is wrong"
+#~ msgstr "手机格式错误"
+
+#~ msgid "SMS failure"
+#~ msgstr "短信发送失败"
+
+#~ msgid "Email format error"
+#~ msgstr "Email格式错误"
+
+#~ msgid "Email already exists"
+#~ msgstr "Email已经存在"
+
+#~ msgid "Email send success"
+#~ msgstr "Email发送成功"
+
+#~ msgid "Email send failure"
+#~ msgstr "Email发送失败"
+
+#~ msgid "auth success"
+#~ msgstr "认证成功。"
+
+#~ msgid "auth code is error"
+#~ msgstr "验证码错误"
+
+#~ msgid "request is error"
+#~ msgstr "错误请求"
+
+#~ msgid "product storage is not eagou"
+#~ msgstr "没有足够的库存"
+
+#~ msgid "argement is error"
+#~ msgstr "协议错误"
+
+#~ msgid "Please select delete products"
+#~ msgstr "请选择删除的商品"
+
+#~ msgid "no order product"
+#~ msgstr "订单商品不存在"
+
+#~ msgid "order wrong"
+#~ msgstr "订单错误"
+
+#~ msgid "user not set pay password"
+#~ msgstr "用户没有设置支付密码"
+
+#~ msgid "pay password is error"
+#~ msgstr "支付密码错误"
+
+#~ msgid "order is error"
+#~ msgstr "订单错误"
+
+#~ msgid "not set pay password"
+#~ msgstr "用户没有设置支付密码"
+
+#~ msgid "pay password wrong"
+#~ msgstr "支付密码错误"
+
+#~ msgid "your balance is not enough."
+#~ msgstr "你的资金余额不足"
+
+#~ msgid "not find order"
+#~ msgstr "未查询到相关订单"
+
+#~ msgid "is successed"
+#~ msgstr "成功"
+
+#~ msgid "attention success"
+#~ msgstr "关注成功"
+
+#~ msgid "attention failed"
+#~ msgstr "关注失败"
+
+#~ msgid "product is null"
+#~ msgstr "商品不能为null"
+
+#~ msgid "collect success"
+#~ msgstr "收藏成功"
+
+#~ msgid "collect failed"
+#~ msgstr "收藏失败"
+
+#~ msgid "product is not exsits"
+#~ msgstr "商品不存在."
+
+#~ msgid "my subject"
+#~ msgstr "我的课程"
+
+#~ msgid "my subject task of isrec"
+#~ msgstr "作品"
+
+#~ msgid "my subject task"
+#~ msgstr "我的作品"
+
+#~ msgid "argment error!"
+#~ msgstr "协议失败"
+
+#~ msgid "question is submit of success"
+#~ msgstr "问题提交成功"
+
+#~ msgid "question is submit of failed"
+#~ msgstr "问题提交失败"
+
+#~ msgid "submit question"
+#~ msgstr "提问"
+
+#~ msgid "train center"
+#~ msgstr "用户中心培训中心"
+
+#~ msgid "This user has been registered!"
+#~ msgstr "验证是否已注册"
+
+#~ msgid "Register Success!"
+#~ msgstr "注册成功"
+
+#~ msgid "Register Falid, Please Again"
+#~ msgstr "注册失败，请再试一次"
+
+#~ msgid "my children"
+#~ msgstr "我的孩子"
+
+#~ msgid "pay now"
+#~ msgstr "立即支付"
+
+#~ msgid "confirm receipt"
+#~ msgstr "确认收货"
+
+#~ msgid "comment goods"
+#~ msgstr "评价"
+
+#~ msgid "confirm return"
+#~ msgstr "确认退货"
+
+#~ msgid "Submitted successfully"
+#~ msgstr "提交成功!"
+
+#~ msgid "Cancel the success"
+#~ msgstr "订单取消成功!"
+
+#~ msgid "Confirm the success"
+#~ msgstr "确认请求发送成功!"
+
+#~ msgid "address is null"
+#~ msgstr "地址不能为空"
+
+#~ msgid "delete success"
+#~ msgstr "删除操作成功!"
+
+#~ msgid "Delete failed"
+#~ msgstr "删除失败"
+
+#~ msgid "Illegal operation"
+#~ msgstr "无效操作!"
+
+#~ msgid "user info"
+#~ msgstr "用户信息"
+
+#~ msgid "setting"
+#~ msgstr "设置"
+
+#~ msgid "not access vister"
+#~ msgstr "未授权访问"
+
+#~ msgid "not access."
+#~ msgstr "未授权访问"
+
+#~ msgid "id shop can't be 0"
+#~ msgstr "商户ID不能传入小于0的值"
+
+#~ msgid "login user not be null"
+#~ msgstr "登陆账号不能为空"
+
+#~ msgid "input code wrong"
+#~ msgstr "输入验证码错误"
+
+#~ msgid "login password not be null"
+#~ msgstr "登陆密码不能为空"
+
+#~ msgid "user not find or not set password"
+#~ msgstr "用户未找到或密码为空"
+
+#~ msgid "user or password wrong"
+#~ msgstr "用户或密码错误"
+
+#~ msgid "Account is not available"
+#~ msgstr "账户不可用"
+
+#~ msgid "code is wrong"
+#~ msgstr "收入的登陆验证码错误"
+
+#~ msgid "login type wrong"
+#~ msgstr "登陆方式错误"
+
+#~ msgid "bind user not find"
+#~ msgstr "绑定用户丢失"
+
+#~ msgid "plase login"
+#~ msgstr "请先登陆"
+
+#~ msgid "shop data wrong"
+#~ msgstr "商户数据错误"
+
+#~ msgid "you are not this shop admin"
+#~ msgstr "您不是此商户的管理员"
+
+#~ msgid "$"
+#~ msgstr "￥"
+
+#~ msgid "not support bind type"
+#~ msgstr "不支持的绑定登陆类型"
+
+#~ msgid "unkown order status"
+#~ msgstr "未知订单状态"
+
+#~ msgid "order status finish__1"
+#~ msgstr "订单完结"
+
+#~ msgid "order status disable"
+#~ msgstr "订单关闭"
+
+#~ msgid "order status time"
+#~ msgstr "等待生效"
+
+#~ msgid "order status init"
+#~ msgstr "订单待确认"
+
+#~ msgid "order not pay"
+#~ msgstr "未支付"
+
+#~ msgid "code order is pay"
+#~ msgstr "消费券待消费"
+
+#~ msgid "code order part"
+#~ msgstr "消费券部分使用"
+
+#~ msgid "code order over"
+#~ msgstr "消费券已全部使用"
+
+#~ msgid "In the order a refund"
+#~ msgstr "订单退款中"
+
+#~ msgid "shipping order is pay"
+#~ msgstr "等待发货"
+
+#~ msgid "partial shipment"
+#~ msgstr "部分发货"
