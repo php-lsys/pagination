@@ -37,7 +37,7 @@ class Link implements Render{
 	 * @param string $url
 	 * @return \LSYS\Pagination\Render\SimpleHtml
 	 */
-	public function set_tpl_url($url){
+	public function setTplUrl($url){
 		$this->_tpl_url=$url;
 		$this->_get_url=null;
 		$this->_rule_page=null;
@@ -45,7 +45,7 @@ class Link implements Render{
 			case 'get':
 				$key=$this->_config->get("key","page");
 				if (isset($_GET[$key])&&$_GET[$key]>0){
-					$this->_page->set_page(intval($_GET[$key]));
+					$this->_page->setPage(intval($_GET[$key]));
 				}
 				break;
 			case 'rule':
@@ -54,7 +54,7 @@ class Link implements Render{
 				$len=strlen($before);
 				if($pos!==false&&$len>0){
 					$page=intval(substr($this->_tpl_url, $pos+strlen($before)));
-					if ($page>0)$this->_page->set_page($page);
+					if ($page>0)$this->_page->setPage($page);
 				}
 				break;
 		}
@@ -67,14 +67,14 @@ class Link implements Render{
 	 */
 	protected function _url($page){
 		switch ($this->_config->get("mode")){
-			case 'get': return $this->_model_get($page);
-			case 'rule': return $this->_model_rule($page);
+			case 'get': return $this->_modelGet($page);
+			case 'rule': return $this->_modelRule($page);
 		}
 		return $page;
 	}
 	//规则模式
 	private $_rule_page;
-	private function _model_rule($page){
+	private function _modelRule($page){
 		static $before,$after,$before_len,$after_len,$before_pos,$after_pos;
 		if ($this->_rule_page===null){
 			$before=$this->_config->get("before");
@@ -109,7 +109,7 @@ class Link implements Render{
 	}
 	//$_GET 模式
 	private $_get_url=null;
-	private function _model_get($page){
+	private function _modelGet($page){
 		$key=$this->_config->get("key","page");
 		if ($this->_get_url===null){
 			$url=$this->_tpl_url;
@@ -122,11 +122,11 @@ class Link implements Render{
 	}
 	/**
 	 * {@inheritDoc}
-	 * @see \LSYS\Pagination\Render::set_pagination()
+	 * @see \LSYS\Pagination\Render::setPagination()
 	 */
-	public function set_pagination(Pagination $page){
+	public function setPagination(Pagination $page){
 		$this->_page=$page;
-		if (isset($_SERVER['REQUEST_URI'])) $this->set_tpl_url($_SERVER['REQUEST_URI']);
+		if (isset($_SERVER['REQUEST_URI'])) $this->setTplUrl($_SERVER['REQUEST_URI']);
 	}
 	/**
 	 * {@inheritDoc}
@@ -135,7 +135,7 @@ class Link implements Render{
 	public function render()
 	{
 		$page=$this->_page;
-		if ($page->get_total_page()<=1&&$auto_hide) return '';
+		if ($page->getTotalPage()<=1&&$auto_hide) return '';
 		ob_start();
 		extract($this->_vars);
 		require $this->_tpls;

@@ -11,15 +11,15 @@ use function LSYS\Pagination\__;
 if (!isset($this)) die('^_^');//防止直接访问
 // Number of page links in the begin and end of whole range
 
-$total_pages=$page->get_total_page();
-$total_items=$page->get_total();
-$current_page=$page->get_page();
+$total_pages=$page->getTotalPage();
+$total_items=$page->getTotal();
+$current_page=$page->getPage();
 
 $first_page=$current_page>1?1:false;
 $last_page=$total_pages>$current_page?$total_pages:false;
 
-$previous_page=$page->get_prev_page();
-$next_page=$page->get_next_page();
+$previous_page=$page->getPrevPage();
+$next_page=$page->getNextPage();
 
 
 // Beginning group of pages: $n1...$n2

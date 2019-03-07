@@ -34,7 +34,7 @@ class SimpleHtml implements Render{
 		$this->_tpls=$config->get("tpls",__DIR__."/../../../../tpls/simple_html.php");
 		$this->_config=$config;
 	}
-	public function set_tpl_url($url){
+	public function setTplUrl($url){
 		$this->_tpl_url=$url;
 		return $this;
 	}
@@ -43,14 +43,14 @@ class SimpleHtml implements Render{
 	 * @param string $url
 	 * @return \LSYS\Pagination\Render\SimpleHtml
 	 */
-	protected function _init_tpl_url(){
+	protected function _initTplUrl(){
 		$this->_get_url=null;
 		$this->_rule_page=null;
 		switch ($this->_config->get("mode")){
 			case 'get':
 				$key=$this->_config->get("key","page");
 				if (isset($_GET[$key])&&$_GET[$key]>0){
-					$this->_page->set_page(intval($_GET[$key]));
+					$this->_page->setPage(intval($_GET[$key]));
 				}
 				break;
 			case 'rule':
@@ -59,7 +59,7 @@ class SimpleHtml implements Render{
 				$len=strlen($before);
 				if($pos!==false&&$len>0){
 					$page=intval(substr($this->_tpl_url, $pos+strlen($before)));
-					if ($page>0)$this->_page->set_page($page);
+					if ($page>0)$this->_page->setPage($page);
 				}
 				break;
 		}
@@ -72,14 +72,14 @@ class SimpleHtml implements Render{
 	 */
 	protected function _url($page){
 		switch ($this->_config->get("mode")){
-			case 'get': return $this->_model_get($page);
-			case 'rule': return $this->_model_rule($page);
+			case 'get': return $this->_modelGet($page);
+			case 'rule': return $this->_modelRule($page);
 		}
 		return $page;
 	}
 	//规则模式
 	private $_rule_page;
-	private function _model_rule($page){
+	private function _modelRule($page){
 		static $before,$after,$before_len,$after_len,$before_pos,$after_pos;
 		if ($this->_rule_page===null){
 			$before=$this->_config->get("before");
@@ -114,7 +114,7 @@ class SimpleHtml implements Render{
 	}
 	//$_GET 模式
 	private $_get_url=null;
-	private function _model_get($page){
+	private function _modelGet($page){
 		$key=$this->_config->get("key","page");
 		if ($this->_get_url===null){
 			$url=$this->_tpl_url;
@@ -130,14 +130,14 @@ class SimpleHtml implements Render{
 	}
 	/**
 	 * {@inheritDoc}
-	 * @see \LSYS\Pagination\Render::set_pagination()
+	 * @see \LSYS\Pagination\Render::setPagination()
 	 */
-	public function set_pagination(Pagination $page){
+	public function setPagination(Pagination $page){
 		$this->_page=$page;
 		if ($this->_tpl_url===null&&isset($_SERVER['REQUEST_URI'])){
-			$this->set_tpl_url($_SERVER['REQUEST_URI']);
+			$this->setTplUrl($_SERVER['REQUEST_URI']);
 		}
-		if ($this->_tpl_url!==null)$this->_init_tpl_url();
+		if ($this->_tpl_url!==null)$this->_initTplUrl();
 		return $this;
 	}
 	/**
@@ -148,7 +148,7 @@ class SimpleHtml implements Render{
 	{
 		extract($this->_vars);
 		$page=$this->_page;
-		if ($page->get_total_page()<=1&&$auto_hide) return '';
+		if ($page->getTotalPage()<=1&&$auto_hide) return '';
 		ob_start();
 		require $this->_tpls;
 		$data=ob_get_contents();

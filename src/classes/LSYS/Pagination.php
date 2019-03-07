@@ -34,14 +34,14 @@ class Pagination {
 	public function __construct(Render $render)
 	{
 		$this->_render=$render;
-		$render->set_pagination($this);
+		$render->setPagination($this);
 	}
 	/**
 	 * set limit
 	 * @param number $limit
 	 * @return static
 	 */
-	public function set_limit($limit){
+	public function setLimit($limit){
 		$limit=intval($limit);
 		if ($limit<=0)$limit=1;
 		$total_page=ceil($this->_vars['total_items']/$limit);
@@ -54,7 +54,7 @@ class Pagination {
 	 * @param number $total
 	 * @return static
 	 */
-	public function set_total($total){
+	public function setTotal($total){
 		$total=intval(strval($total));
 		if ($total<=0)$total=0;
 		$total_page=ceil($total/$this->_vars['items_per_page']);
@@ -67,7 +67,7 @@ class Pagination {
 	 * @param number $page
 	 * @return static
 	 */
-	public function set_page($page){
+	public function setPage($page){
 		$page=intval($page);
 		if($page<1) $page=1;
 		$this->_vars['current_page']=$page;
@@ -80,7 +80,7 @@ class Pagination {
 	 * @param   integer  page number
 	 * @return  boolean
 	 */
-	public function valid_page()
+	public function validPage()
 	{
 		$page=$this->_vars['current_page'];
 		return $page > 0 AND $page <= $this->_vars['total_pages'];
@@ -89,7 +89,7 @@ class Pagination {
 	 * Fix wrong page number
 	 * @return static
 	 */
-	public function fix_page(){
+	public function fixPage(){
 		$page=$this->_vars['current_page'];
 		$total=$this->_vars['total_pages'];
 		if ($page<=0){
@@ -105,7 +105,7 @@ class Pagination {
 	 * @param int $page
 	 * @return static
 	 */
-	public function set_offset($offset){
+	public function setOffset($offset){
 		$offset=intval($offset);
 		if($offset<=0) $offset=0;
 		$this->_vars['current_offset']=$offset;
@@ -118,7 +118,7 @@ class Pagination {
 	 * @param number $page skip page
 	 * @return static
 	 */
-	public function set_skip($skip_page){
+	public function setSkip($skip_page){
 		$this->_skip_page=$skip_page;
 		return $this;
 	}
@@ -126,7 +126,7 @@ class Pagination {
 	 * get next page number
 	 * @return boolean|number
 	 */
-	public function get_next_page(){
+	public function getNextPage(){
 		$page=$this->_vars['current_page'];
 		$total=$this->_vars['total_pages'];
 		if($this->_vars['current_offset']+$this->_vars['items_per_page']>=$this->_vars['total_items']) return false;
@@ -136,7 +136,7 @@ class Pagination {
 	 * get prev page number
 	 * @return number|boolean
 	 */
-	public function get_prev_page(){
+	public function getPrevPage(){
 		$page=$this->_vars['current_page'];
 		if($page>$this->_vars['total_pages']+1) return false;
 		return $page>1?$page-1:false;
@@ -145,14 +145,14 @@ class Pagination {
 	 * get limit
 	 * @return number
 	 */
-	public function get_limit(){
+	public function getLimit(){
 		return $this->_vars['items_per_page'];
 	}
 	/**
 	 * get total item number
 	 * @return number
 	 */
-	public function get_total(){
+	public function getTotal(){
 		return $this->_vars['total_items'];
 	}
 	/**
@@ -160,7 +160,7 @@ class Pagination {
 	 * @param string $fix
 	 * @return number
 	 */
-	public function get_page($fix=false){
+	public function getPage($fix=false){
 		$page=$this->_vars['current_page'];
 		if ($fix){
 			$total=$this->_vars['total_pages'];
@@ -176,7 +176,7 @@ class Pagination {
 	 * get offset
 	 * @return number
 	 */
-	public function get_offset(){
+	public function getOffset(){
 		return $this->_vars['current_offset'];
 	}
 	/**
@@ -198,35 +198,35 @@ class Pagination {
 	 * get total page
 	 * @return number
 	 */
-	public function get_total_page(){
+	public function getTotalPage(){
 		return $this->_vars['total_pages'];
 	}
 	/**
 	 * get remain page
 	 * @return number
 	 */
-	public function get_remain_page(){
-		$total_page=$this->get_total_page();
-		$rpage=$total_page-$this->get_page();
+	public function getRemainPage(){
+		$total_page=$this->getTotalPage();
+		$rpage=$total_page-$this->getPage();
 		return $rpage>0?$rpage:0;
 	}
 	/**
 	 * to array
 	 * @return array
 	 */
-	public function as_array(){
-		$next_page=$this->get_next_page();
-		$prev_page=$this->get_prev_page();
+	public function asArray(){
+		$next_page=$this->getNextPage();
+		$prev_page=$this->getPrevPage();
 		return array(
-			'total'=>$this->get_total(),//总记录数
-			'page'=>$this->get_page(),//当前页数
-			'offset'=>$this->get_offset(),//当前偏移
+			'total'=>$this->getTotal(),//总记录数
+			'page'=>$this->getPage(),//当前页数
+			'offset'=>$this->getOffset(),//当前偏移
 			'prev_page'=>$prev_page,//当前页数
 			'next_page'=>$next_page,//当前页数
-			'page'=>$this->get_page(),//当前页数
-			'total_page'=>$this->get_total_page(),//总页数
-			'remain_page'=>$this->get_remain_page(),//剩余页数
-			'limit'=>$this->get_limit(),//每页数量
+			'page'=>$this->getPage(),//当前页数
+			'total_page'=>$this->getTotalPage(),//总页数
+			'remain_page'=>$this->getRemainPage(),//剩余页数
+			'limit'=>$this->getLimit(),//每页数量
 			'is_next'=>boolval($next_page),//是否有下一页
 			'is_prev'=>boolval($prev_page),//是否有下一页
 		);

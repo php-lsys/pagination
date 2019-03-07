@@ -13,7 +13,7 @@ interface Render{
 	 * set Pagination object
 	 * @param Pagination $page
 	 */
-	public function set_pagination(Pagination $page);
+	public function setPagination(Pagination $page);
 	/**
 	 * render Pagination
 	 * @return string
