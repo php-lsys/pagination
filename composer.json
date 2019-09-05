@@ -2,7 +2,6 @@
 	"name": "lsys/pagination",
 	"type" : "library",
 	"license": "Apache-2.0",
-
 	"description" : "lsys module pagination",
 	"autoload":{
 		"psr-4": {
