@@ -41,8 +41,7 @@ class Pagination {
 	 * @param number $limit
 	 * @return static
 	 */
-	public function setLimit($limit){
-		$limit=intval($limit);
+	public function setLimit(int $limit){
 		if ($limit<=0)$limit=1;
 		$total_page=ceil($this->_vars['total_items']/$limit);
 		$this->_vars['total_pages']=$total_page;
@@ -54,8 +53,7 @@ class Pagination {
 	 * @param number $total
 	 * @return static
 	 */
-	public function setTotal($total){
-		$total=intval(strval($total));
+	public function setTotal(int $total){
 		if ($total<=0)$total=0;
 		$total_page=ceil($total/$this->_vars['items_per_page']);
 		$this->_vars['total_pages']=$total_page;
@@ -67,7 +65,7 @@ class Pagination {
 	 * @param number $page
 	 * @return static
 	 */
-	public function setPage($page){
+	public function setPage(int $page){
 		$page=intval($page);
 		if($page<1) $page=1;
 		$this->_vars['current_page']=$page;
@@ -80,7 +78,7 @@ class Pagination {
 	 * @param   integer  page number
 	 * @return  boolean
 	 */
-	public function validPage()
+	public function validPage():bool
 	{
 		$page=$this->_vars['current_page'];
 		return $page > 0 AND $page <= $this->_vars['total_pages'];
@@ -105,8 +103,7 @@ class Pagination {
 	 * @param int $page
 	 * @return static
 	 */
-	public function setOffset($offset){
-		$offset=intval($offset);
+	public function setOffset(int $offset){
 		if($offset<=0) $offset=0;
 		$this->_vars['current_offset']=$offset;
 		$this->_vars['current_page']=floor($offset/$this->_vars['items_per_page'])+1;
@@ -118,7 +115,7 @@ class Pagination {
 	 * @param number $page skip page
 	 * @return static
 	 */
-	public function setSkip($skip_page){
+	public function setSkip(int $skip_page){
 		$this->_skip_page=$skip_page;
 		return $this;
 	}
@@ -145,22 +142,22 @@ class Pagination {
 	 * get limit
 	 * @return number
 	 */
-	public function getLimit(){
-		return $this->_vars['items_per_page'];
+	public function getLimit():int{
+		return (int)$this->_vars['items_per_page']??0;
 	}
 	/**
 	 * get total item number
 	 * @return number
 	 */
-	public function getTotal(){
-		return $this->_vars['total_items'];
+	public function getTotal():int{
+	    return (int)$this->_vars['total_items']??0;
 	}
 	/**
 	 * get page number
 	 * @param string $fix
 	 * @return number
 	 */
-	public function getPage($fix=false){
+	public function getPage(bool $fix=false):int{
 		$page=$this->_vars['current_page'];
 		if ($fix){
 			$total=$this->_vars['total_pages'];
@@ -170,14 +167,14 @@ class Pagination {
 				$page=$total;
 			}
 		}
-		return $page;
+		return (int)$page;
 	}
 	/**
 	 * get offset
 	 * @return number
 	 */
-	public function getOffset(){
-		return $this->_vars['current_offset'];
+	public function getOffset():int{
+		return (int)$this->_vars['current_offset'];
 	}
 	/**
 	 * Renders the pagination links.
@@ -191,30 +188,30 @@ class Pagination {
 	 * proxy to render
 	 * @return  string  pagination output
 	 */
-	public function render(){
+	public function render():?string{
 		return $this->_render->render();
 	}
 	/**
 	 * get total page
 	 * @return number
 	 */
-	public function getTotalPage(){
-		return $this->_vars['total_pages'];
+	public function getTotalPage():int{
+		return (int)$this->_vars['total_pages'];
 	}
 	/**
 	 * get remain page
 	 * @return number
 	 */
-	public function getRemainPage(){
+	public function getRemainPage():int{
 		$total_page=$this->getTotalPage();
 		$rpage=$total_page-$this->getPage();
-		return $rpage>0?$rpage:0;
+		return $rpage>0?(int)$rpage:0;
 	}
 	/**
 	 * to array
 	 * @return array
 	 */
-	public function asArray(){
+	public function asArray():array{
 		$next_page=$this->getNextPage();
 		$prev_page=$this->getPrevPage();
 		return array(

@@ -18,5 +18,5 @@ interface Render{
 	 * render Pagination
 	 * @return string
 	 */
-	public function render();
+	public function render():?string;
 }

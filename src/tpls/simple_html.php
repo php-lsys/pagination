@@ -5,6 +5,10 @@
  * @copyright  (c) 2007-2012 Kohana Team
  * @license    http://www.apache.org/licenses/LICENSE-2.0
  * @license    http://kohanaframework.org/license
+ * @var \LSYS\Pagination $page
+ * @var \LSYS\Pagination\Render\SimpleHtml $this
+ * @var int $count_out
+ * @var int $count_in
  */ 
 use function LSYS\Pagination\__;
 
@@ -12,7 +16,6 @@ if (!isset($this)) die('^_^');//防止直接访问
 // Number of page links in the begin and end of whole range
 
 $total_pages=$page->getTotalPage();
-$total_items=$page->getTotal();
 $current_page=$page->getPage();
 
 $first_page=$current_page>1?1:false;

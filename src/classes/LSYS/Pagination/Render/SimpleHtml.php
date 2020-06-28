@@ -34,7 +34,7 @@ class SimpleHtml implements Render{
 		$this->_tpls=$config->get("tpls",__DIR__."/../../../../tpls/simple_html.php");
 		$this->_config=$config;
 	}
-	public function setTplUrl($url){
+	public function setTplUrl(string $url){
 		$this->_tpl_url=$url;
 		return $this;
 	}
@@ -70,16 +70,16 @@ class SimpleHtml implements Render{
 	 * @param string $page
 	 * @return string
 	 */
-	protected function _url($page){
+	protected function _url(?string $page):?string {
 		switch ($this->_config->get("mode")){
-			case 'get': return $this->_modelGet($page);
-			case 'rule': return $this->_modelRule($page);
+		    case 'get': return $this->_modelGet(strval($page));
+		    case 'rule': return $this->_modelRule(strval($page));
 		}
 		return $page;
 	}
 	//规则模式
 	private $_rule_page;
-	private function _modelRule($page){
+	private function _modelRule(string $page):string{
 		static $before,$after,$before_len,$after_len,$before_pos,$after_pos;
 		if ($this->_rule_page===null){
 			$before=$this->_config->get("before");
@@ -114,7 +114,7 @@ class SimpleHtml implements Render{
 	}
 	//$_GET 模式
 	private $_get_url=null;
-	private function _modelGet($page){
+	private function _modelGet(string $page):string{
 		$key=$this->_config->get("key","page");
 		if ($this->_get_url===null){
 			$url=$this->_tpl_url;
@@ -144,11 +144,11 @@ class SimpleHtml implements Render{
 	 * {@inheritDoc}
 	 * @see \LSYS\Pagination\Render::render()
 	 */
-	public function render()
+	public function render():?string
 	{
 		extract($this->_vars);
 		$page=$this->_page;
-		if ($page->getTotalPage()<=1&&$auto_hide) return '';
+		if ($page->getTotalPage()<=1&&($this->_vars['auto_hide']??0)) return '';
 		ob_start();
 		require $this->_tpls;
 		$data=ob_get_contents();
